@@ -1,0 +1,13 @@
+// transitions
+$trans-default: 0.3s ease;
+$trans-long: 0.6s ease;
+
+:root {
+    // palette
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+
+    // semantic
+    --color-bg: var(--color-white);
+    --color-text-primary: var(--color-black);
+}
