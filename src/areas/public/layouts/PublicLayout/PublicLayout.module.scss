@@ -1,5 +1,21 @@
 @use '@/styles/core.scss' as * ;
 
 .layout {
-    
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    align-items: start;
+    min-height: 100dvh;
+    background-color: #0D1117;
+
+    @include vp-1024 {
+        display: block;
+    }
+
+    @include vp-600 {
+        
+    }
+
+    &:global(.scroll-lock) {
+        overflow: hidden;
+    }
 }

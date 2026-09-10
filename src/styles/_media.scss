@@ -1,5 +1,23 @@
-@mixin vp-1680 {
-    @media (max-width: 1680px) {
+@mixin vp-1600 {
+    @media (max-width: 1600px) {
+        @content;
+    }
+}
+
+@mixin vp-1440 {
+    @media (max-width: 1440px) {
+        @content;
+    }
+}
+
+@mixin vp-1024 {
+    @media (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin vp-600 {
+    @media (max-width: 600px) {
         @content;
     }
 }
