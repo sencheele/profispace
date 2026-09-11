@@ -10,4 +10,19 @@
     @include vp-600 {
         padding-block: 25px;
     }
+
+    &__title {
+        @include typography(700, 1, 36px, var(--color-accent));
+
+        margin-bottom: 30px;
+
+        @include vp-1600 {
+            font-size: 32px;
+        }
+
+        @include vp-600 {
+            margin-bottom: 25px;
+            font-size: 28px;
+        }
+    }
 }

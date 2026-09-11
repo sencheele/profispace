@@ -1,0 +1,21 @@
+@use '@/styles/core.scss' as * ;
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    @include vp-1440 {
+        gap: 20px;
+    }
+
+    @include vp-900 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include vp-600 {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}

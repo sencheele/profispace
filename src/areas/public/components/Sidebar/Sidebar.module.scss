@@ -107,11 +107,12 @@
         }
 
         @include vp-1600 {
+            padding: 15px 10px;
             font-size: 18px;
         }
 
         @include vp-1440 {
-            padding: 15px 10px;
+            font-size: 16px;
         }
 
         @include vp-1024 {
@@ -124,7 +125,6 @@
 
         @include vp-600 {
             padding-inline: 0;
-            font-size: 16px;
         }
     }
 

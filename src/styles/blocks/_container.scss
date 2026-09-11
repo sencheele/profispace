@@ -8,10 +8,6 @@
     }
 
     @include vp-1440 {
-        padding-inline: 60px;
-    }
-
-    @include vp-1024 {
         padding-inline: 40px;
     }
 
