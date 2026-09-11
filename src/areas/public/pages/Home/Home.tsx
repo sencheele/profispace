@@ -1,10 +1,11 @@
 import styles from './Home.module.scss'
+import Hero from './sections/Hero'
 
 const Home = () => {
     return (
-        <section className={styles.home}>
-            Home
-        </section>
+        <div className={styles.home}>
+            <Hero />
+        </div>
     )
 }
 

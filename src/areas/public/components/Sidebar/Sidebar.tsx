@@ -7,15 +7,15 @@ const Sidebar = () => {
 
     const links = [
         {
-            to: 'home',
+            to: '/home',
             label: 'Главная',
         },
         {
-            to: 'projects',
+            to: '/projects',
             label: 'Проекты',
         },
         {
-            to: 'about',
+            to: '/about',
             label: 'Обо мне',
         },
     ]

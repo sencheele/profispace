@@ -1,0 +1,21 @@
+@use '/src/styles/core.scss' as * ;
+
+.container {
+    padding-inline: 150px;
+
+    @include vp-1600 {
+        padding-inline: 100px;
+    }
+
+    @include vp-1440 {
+        padding-inline: 60px;
+    }
+
+    @include vp-1024 {
+        padding-inline: 40px;
+    }
+
+    @include vp-600 {
+        padding-inline: 20px;
+    }
+}

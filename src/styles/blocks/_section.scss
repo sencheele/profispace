@@ -1,0 +1,13 @@
+@use '/src/styles/core.scss' as * ;
+
+.section {
+    padding-block: 50px;
+
+    @include vp-1600 {
+        padding-block: 40px;
+    }
+
+    @include vp-600 {
+        padding-block: 25px;
+    }
+}

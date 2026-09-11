@@ -1,0 +1,38 @@
+@use '@/styles/core.scss' as * ;
+
+.button {
+    @include reset-button;
+    @include typography(400, 1, 18px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding-inline: 20px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: border-color $trans-default, background-color $trans-default, color $trans-default;
+
+    @include vp-1600 {
+        height: 45px;
+        font-size: 16px;
+    }
+
+    &--fill {
+        background-color: var(--color-accent);
+        font-weight: 500;
+
+        @include hover {
+            background-color: var(--color-accent-hover);
+        }
+    }
+
+    &--stroke {
+        border-color: var(--color-accent);
+
+        @include hover {
+            background-color: var(--color-accent-opacity);
+            // color: var(--color-accent-hover);
+        }
+    }
+}
