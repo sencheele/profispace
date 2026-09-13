@@ -1,0 +1,52 @@
+@use '@/styles/core.scss' as * ;
+
+.collaboration-cta {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 20px;
+        padding: 35px 40px;
+        border-radius: 4px;
+        background-color: var(--color-gray-700);
+
+        @include vp-1440 {
+            padding: 30px 35px;
+        }
+
+        @include vp-900 {
+            flex-direction: column;
+            align-items: start;
+            row-gap: 20px;
+        }
+
+        @include vp-600 {
+            padding: 25px 20px 20px;
+        }
+    }
+
+    &__content {
+        max-width: 600px;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+        color: var(--color-text-primary);
+
+        @include vp-600 {
+            margin-bottom: 12px;
+        }
+    }
+
+    &__description {
+        @include typography(400, 1.6, 18px);
+
+        @include vp-1600 {
+            font-size: 16px;
+        }
+    }
+
+    &__button {
+        white-space: nowrap;
+    }
+}

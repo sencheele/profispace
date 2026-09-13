@@ -12,7 +12,7 @@
     }
 
     &__title {
-        @include typography(700, 1, 36px, var(--color-accent));
+        @include typography(700, 1.2, 36px, var(--color-accent));
 
         margin-bottom: 30px;
 
