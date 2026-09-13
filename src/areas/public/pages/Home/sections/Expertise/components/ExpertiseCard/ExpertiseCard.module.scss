@@ -1,0 +1,86 @@
+@use '@/styles/core.scss' as * ;
+
+.expertise-card {
+    position: relative;
+    max-width: 900px;
+    padding-top: 0.6em;
+    padding-left: 70px;
+    font-size: 200px;
+
+    @include vp-1600 {
+        padding-top: 0.55em;
+        padding-left: 55px;
+        font-size: 160px;
+    }
+
+    @include vp-600 {
+        position: static;
+        padding: 0;
+        font-size: 120px;
+    }
+
+    &__header {
+        display: contents;
+
+        @include vp-600 {
+            position: relative;
+            display: block;
+        }
+    }
+
+    &__number {
+        @include typography(800, 1, 200px, var(--color-blue-500-20));
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 130px;
+        text-align: center;
+
+        @include vp-1600 {
+            width: 100px;
+            font-size: 160px;
+        }
+
+        @include vp-600 {
+            position: static;
+            width: 80px;
+            font-size: 120px;
+        }
+    }
+
+    &__title {
+        @include typography(700, 1.2, 32px);
+
+        margin-bottom: 10px;
+
+        @include vp-1600 {
+            font-size: 26px;
+        }
+
+        @include vp-600 {
+            position: absolute;
+            top: 50%;
+            left: 40px;
+            margin-bottom: 0;
+            font-size: 22px;
+            transform: translateY(calc(-50% + 5px));
+        }
+    }
+
+    &__description {
+        @include typography(400, 1.6, 18px);
+
+        padding-left: 50px;
+
+        @include vp-1600 {
+            padding-left: 50px;
+            font-size: 16px;
+        }
+
+        @include vp-600 {
+            padding-left: 0;
+        }
+    }
+}

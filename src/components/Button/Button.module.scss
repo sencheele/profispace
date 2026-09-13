@@ -18,21 +18,40 @@
         font-size: 16px;
     }
 
-    &--fill {
+    &--blue {
         background-color: var(--color-accent);
-        font-weight: 500;
+        border-color: var(--color-accent);
 
         @include hover {
             background-color: var(--color-accent-hover);
         }
     }
 
-    &--stroke {
-        border-color: var(--color-accent);
+    &--white {
+        background-color: var(--color-gray-100);
+        border-color: var(--color-gray-100);
+    }
 
+    &--fill {
+        border: none;
+        font-weight: 500;
+    }
+
+    &--stroke {
+        background-color: transparent;
+    }
+
+    &.button--stroke.button--blue {
         @include hover {
             background-color: var(--color-accent-opacity);
-            // color: var(--color-accent-hover);
+        }
+    }
+
+    &.button--fill.button--white {
+        color: var(--color-gray-700);
+
+        @include hover {
+            color: var(--color-accent);
         }
     }
 }

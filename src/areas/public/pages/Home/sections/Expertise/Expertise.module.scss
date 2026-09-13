@@ -1,0 +1,17 @@
+@use '@/styles/core.scss' as * ;
+
+.expertise {
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+
+        @include vp-1600 {
+            row-gap: 25px;
+        }
+
+        @include vp-600 {
+            row-gap: 30px;
+        }
+    }
+}

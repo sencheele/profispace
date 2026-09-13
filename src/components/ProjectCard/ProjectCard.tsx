@@ -6,7 +6,7 @@ type Props = {
     projectData: TestData,
 }
 
-const ProjectCard = ( props:Props ) => {
+const ProjectCard = ( props: Props ) => {
     const {
         projectData,
     } = props

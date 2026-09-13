@@ -26,6 +26,10 @@ const Sidebar = () => {
 
     return (
         <aside className={`${styles.sidebar} ${isSidebarActive ? 'is-active' : ''}`}>
+            <span className={styles.sidebar__created}>
+                Created by
+            </span>
+
             <a
                 className={styles.sidebar__logo}
                 href='/'

@@ -27,14 +27,14 @@ const Hero = () => {
 
                     <div className={styles.hero__buttons}>
                         <NavLink
-                            className={`${buttonStyles.button} ${buttonStyles['button--fill']}`}
+                            className={`${buttonStyles.button} ${buttonStyles['button--fill']} ${buttonStyles['button--blue']}`}
                             to='/projects'
                         >
                             Посмотреть проекты
                         </NavLink>
 
                         <NavLink
-                            className={`${buttonStyles.button} ${buttonStyles['button--stroke']}`}
+                            className={`${buttonStyles.button} ${buttonStyles['button--stroke']} ${buttonStyles['button--blue']}`}
                             to='/about'
                         >
                             Узнать обо мне

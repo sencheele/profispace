@@ -1,7 +1,8 @@
 @use '@/styles/core.scss' as * ;
 
 .featured-projects {
-    &__title {
-        
+    &__button {
+        width: fit-content;
+        margin-top: 30px;
     }
 }
