@@ -1,0 +1,29 @@
+@use '@/styles/core.scss' as *;
+
+.profile-info-item {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    svg {
+        aspect-ratio: 1;
+        width: 26px;
+        fill: var(--color-accent);
+
+        @include vp-1600 {
+            width: 24px;
+        }
+    }
+
+    &__text {
+        @include typography(400, 1, 18px);
+
+        @include vp-1600 {
+            font-size: 16px;
+        }
+
+        @include vp-600 {
+            font-size: 15px;
+        }
+    }
+}

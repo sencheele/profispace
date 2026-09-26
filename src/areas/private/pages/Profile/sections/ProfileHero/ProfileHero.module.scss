@@ -1,0 +1,166 @@
+@use '@/styles/core.scss' as *;
+
+.profile-hero {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__identity {
+        display: flex;
+        align-items: center;
+        column-gap: 50px;
+        margin-bottom: 30px;
+
+        @include vp-1600 {
+            column-gap: 40px;
+        }
+
+        @include vp-900 {
+            column-gap: 35px;
+        }
+
+        @include vp-600 {
+            column-gap: 25px;
+        }
+
+        @include vp-450 {
+            column-gap: 20px;
+        }
+    }
+
+    &__avatar {
+        aspect-ratio: 1;
+        width: 200px;
+        border-radius: 50%;
+        background-color: var(--color-gray-500);
+
+        @include vp-1600 {
+            width: 180px;
+        }
+
+        @include vp-1440 {
+            width: 160px;
+        }
+
+        @include vp-900 {
+            width: 140px;
+        }
+
+        @include vp-600 {
+            width: 120px;
+        }
+
+        @include vp-450 {
+            width: 100px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+    }
+
+    &__name {
+        @include typography(700, 1, 36px);
+
+        margin-bottom: 12px;
+
+        @include vp-1600 {
+            font-size: 32px;
+        }
+
+        @include vp-900 {
+            font-size: 26px;
+        }
+
+        @include vp-600 {
+            margin-bottom: 8px;
+            font-size: 22px;
+        }
+    }
+
+    &__profession {
+        @include typography(600, 1, 22px);
+
+        margin-bottom: 30px;
+
+        @include vp-1600 {
+            font-size: 20px;
+        }
+
+        @include vp-900 {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        @include vp-600 {
+            margin-bottom: 12px;
+            font-size: 16px;
+        }
+    }
+
+    &__location {
+        @include typography(400, 1, 18px);
+
+        display: flex;
+        align-items: center;
+        column-gap: 4px;
+
+        @include vp-1600 {
+            font-size: 16px;
+        }
+
+        @include vp-600 {
+            font-size: 14px;
+        }
+
+        svg {
+            aspect-ratio: 1;
+            width: 30px;
+            fill: var(--color-text-primary);
+
+            @include vp-1600 {
+                width: 26px;
+            }
+
+            @include vp-600 {
+                width: 24px;
+            }
+        }
+    }
+
+    &__info {
+        margin-bottom: 30px;
+        border-top: 1px solid var(--color-gray-700);
+        border-bottom: 1px solid var(--color-gray-700);
+    }
+
+    &__group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px 80px;
+        padding-block: 40px;
+
+        @include vp-900 {
+            padding-block: 30px;
+        }
+
+        @include vp-600 {
+            gap: 20px 40px;
+        }
+
+        &:first-child {
+            border-bottom: 1px solid var(--color-gray-700);
+        }
+    }
+
+    &__button {
+        align-self: end;
+
+        @include vp-600 {
+            align-self: stretch;
+        }
+    }
+}
