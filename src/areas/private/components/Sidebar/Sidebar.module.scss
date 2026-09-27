@@ -93,7 +93,7 @@
     }
 
     &__link {
-        @include typography(300, 1, 20px, #E6EDF3);
+        @include typography(300, 1, 18px, #E6EDF3);
 
         padding: 20px 15px;
         transition: color $trans-default, font-weight $trans-default;
@@ -113,10 +113,6 @@
 
         @include vp-1600 {
             padding: 15px 10px;
-            font-size: 18px;
-        }
-
-        @include vp-1440 {
             font-size: 16px;
         }
 

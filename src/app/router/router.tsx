@@ -1,5 +1,6 @@
 import PrivateLayout from '@/areas/private/layouts/PublicLayout'
 import Profile from '@/areas/private/pages/Profile'
+import ProfileEdit from '@/areas/private/pages/ProfileEdit'
 import PublicLayout from '@/areas/public/layouts/PublicLayout'
 import About from '@/areas/public/pages/About'
 import Home from '@/areas/public/pages/Home'
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
                 path: 'profile',
                 element: <Profile />
             },
+            {
+                path: 'profile/edit',
+                element: <ProfileEdit />
+            }
             // {
             //     path: 'home',
             //     element: <Home />

@@ -11,6 +11,7 @@
     padding-inline: 20px;
     border: 2px solid transparent;
     border-radius: 4px;
+    user-select: none;
     transition: border-color $trans-default, background-color $trans-default, color $trans-default;
 
     @include vp-1600 {

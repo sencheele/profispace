@@ -1,0 +1,26 @@
+@use '@/styles/core.scss' as *;
+
+.field {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+
+    &__label {
+        @include typography(400, 1, 14px, var(--color-text-secondary));
+    }
+
+    input {
+        @include typography(400, 1, 16px);
+
+        height: 45px;
+        padding: 0 14px;
+        border: 1px solid var(--color-gray-700);
+        border-radius: 4px;
+        background-color: transparent;
+        outline: none;
+
+        &::placeholder {
+            @include typography(400, 1, 16px, var(--color-text-secondary));
+        }
+    }
+}

@@ -101,7 +101,7 @@ const ProfileHero = () => {
 
                     <NavLink
                         className={`${buttonStyles.button} ${buttonStyles['button--stroke']} ${buttonStyles['button--blue']} ${styles['profile-hero__button']}`}
-                        to='/'
+                        to='edit'
                     >
                         Редактировать профиль
                     </NavLink>

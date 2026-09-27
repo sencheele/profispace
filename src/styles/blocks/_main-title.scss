@@ -1,0 +1,24 @@
+@use '@/styles/core.scss' as *;
+
+.main-title {
+    @include typography(700, 1.2, 56px);
+
+    margin-bottom: 30px;
+
+    @include vp-1600 {
+        font-size: 48px;
+    }
+
+    @include vp-1440 {
+        font-size: 42px;
+    }
+
+    @include vp-768 {
+        margin-bottom: 20px;
+        font-size: 36px;
+    }
+
+    @include vp-600 {
+        font-size: 32px;
+    }
+}
