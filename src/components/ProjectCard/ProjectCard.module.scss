@@ -34,6 +34,19 @@
         }
     }
 
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+
+        svg {
+            flex-shrink: 0;
+            aspect-ratio: 1;
+            width: 26px;
+            fill: var(--color-accent);
+        }
+    }
+
     &__title {
         @include typography(700, 1.3, 32px, var(--color-text-primary));
 

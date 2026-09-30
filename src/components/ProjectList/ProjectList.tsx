@@ -1,10 +1,11 @@
 import ProjectCard from '@/components/ProjectCard'
 import styles from './ProjectList.module.scss'
 
-export type TestData = {
-    id: number,
-    title: string,
-    techStack: string[],
+export interface TestData {
+    id: number
+    title: string
+    techStack: string[]
+    isFavorite: boolean
 }
 
 const ProjectList = () => {
@@ -17,6 +18,7 @@ const ProjectList = () => {
                 'TypeScript',
                 'Router',
             ],
+            isFavorite: true,
         },
         {
             id: 2,
@@ -26,6 +28,7 @@ const ProjectList = () => {
                 'TypeScript',
                 'Router',
             ],
+            isFavorite: true,
         },
         {
             id: 3,
@@ -35,6 +38,7 @@ const ProjectList = () => {
                 'TypeScript',
                 'Router',
             ],
+            isFavorite: true,
         },
     ]
 

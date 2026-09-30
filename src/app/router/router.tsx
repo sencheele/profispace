@@ -4,7 +4,7 @@ import ProfileEdit from '@/areas/private/pages/ProfileEdit'
 import PublicLayout from '@/areas/public/layouts/PublicLayout'
 import About from '@/areas/public/pages/About'
 import Home from '@/areas/public/pages/Home'
-import Projects from '@/areas/public/pages/Projects'
+import Projects from '@/areas/public/pages/ProjectsPage'
 import { createBrowserRouter, Navigate } from 'react-router-dom'
 
 const router = createBrowserRouter([

@@ -1,14 +1,17 @@
 import { NavLink } from 'react-router-dom'
 import styles from './ProjectCard.module.scss'
 import type { TestData } from '../ProjectList/ProjectList'
+import Icon from '../Icon'
 
-type Props = {
-    projectData: TestData,
+interface Props {
+    projectData: TestData
+    showFavorite?: boolean
 }
 
 const ProjectCard = ( props: Props ) => {
     const {
         projectData,
+        showFavorite
     } = props
 
     return (
@@ -16,9 +19,16 @@ const ProjectCard = ( props: Props ) => {
             className={styles['project-card']}
             to=''
         >
-            <h3 className={styles['project-card__title']}>
-                {projectData.title}
-            </h3>
+            <div className={styles['project-card__header']}>
+                <h3 className={styles['project-card__title']}>
+                    {projectData.title}
+                </h3>
+
+                {
+                    (showFavorite && projectData.isFavorite) &&
+                        <Icon name='star' />
+                }
+            </div>
 
             <ul className={styles['project-card__stacks']}>
                 {projectData.techStack.map(item => (
