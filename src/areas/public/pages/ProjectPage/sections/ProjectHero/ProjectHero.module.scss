@@ -80,10 +80,12 @@
     }
 
     &__image {
-        background-color: gray;
-
         @include vp-900 {
             aspect-ratio: 5/3;
+        }
+
+        img {
+            border-radius: 4px;
         }
     }
 }

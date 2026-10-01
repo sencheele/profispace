@@ -1,3 +1,4 @@
+import CollaborationCTA from '../../components/CollaborationCTA'
 import styles from './ProjectsPage.module.scss'
 import Projects from './sections/Projects'
 
@@ -12,6 +13,8 @@ const ProjectsPage = () => {
             <Projects
                 title='Все проекты'
             />
+
+            <CollaborationCTA />
         </div>
     )
 }

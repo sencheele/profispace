@@ -1,6 +1,7 @@
 import Icon from '@/components/Icon'
 import styles from './ProjectHero.module.scss'
 import buttonStyles from '@/components/Button/Button.module.scss'
+import previewImage from '@/assets/images/test-project-hero-preview.jpg'
 
 const ProjectHero = () => {
     return (
@@ -78,7 +79,10 @@ const ProjectHero = () => {
                     </div>
 
                     <div className={styles['project-hero__image']}>
-                        <img src='' alt='Превью проекта' />
+                        <img
+                            src={previewImage}
+                            alt='Превью проекта'
+                        />
                     </div>
                 </div>
             </div>
