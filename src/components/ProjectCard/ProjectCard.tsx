@@ -17,7 +17,7 @@ const ProjectCard = ( props: Props ) => {
     return (
         <NavLink
             className={styles['project-card']}
-            to=''
+            to='/project'
         >
             <div className={styles['project-card__header']}>
                 <h3 className={styles['project-card__title']}>
