@@ -1,0 +1,13 @@
+@use "@/styles/core.scss" as *;
+
+.project-description {
+    &__description {
+        @include typography(400, 1.6, 18px);
+
+        max-width: 900px;
+
+        @include vp-1600 {
+            font-size: 16px;
+        }
+    }
+}

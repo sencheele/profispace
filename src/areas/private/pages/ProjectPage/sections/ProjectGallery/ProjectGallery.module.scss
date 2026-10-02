@@ -1,0 +1,18 @@
+@use "@/styles/core.scss" as *;
+
+.project-gallery {
+    &__wrapper {
+        display: flex;
+        column-gap: 15px;
+    }
+
+    &__image {
+        height: 200px;
+
+        img {
+            width: auto;
+            height: 200px;
+            border-radius: 4px;
+        }
+    }
+}

@@ -10,6 +10,7 @@ import ProjectPage from '@/areas/public/pages/ProjectPage'
 import Projects from '@/areas/public/pages/ProjectsPage'
 import { createBrowserRouter, Navigate } from 'react-router-dom'
 import ProjectsPagePrivate from '@/areas/private/pages/ProjectsPage'
+import ProjectPagePrivate from '@/areas/private/pages/ProjectPage'
 
 const router = createBrowserRouter([
     {
@@ -65,6 +66,10 @@ const router = createBrowserRouter([
             {
                 path: 'projects',
                 element: <ProjectsPagePrivate />
+            },
+            {
+                path: 'project',
+                element: <ProjectPagePrivate />
             },
             // {
             //     path: 'about',
