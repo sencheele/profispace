@@ -1,0 +1,31 @@
+@use '@/styles/core.scss' as * ;
+
+.projects {
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 30px;
+
+        @include vp-768 {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__main-title {
+        margin: 0;
+    }
+
+    &__button {
+        @include vp-600 {
+            aspect-ratio: 1;
+            height: 40px;
+            padding: 0;
+
+            span {
+                display: none;
+            }
+        }
+    }
+}
