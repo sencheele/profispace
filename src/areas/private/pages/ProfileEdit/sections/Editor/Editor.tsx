@@ -138,8 +138,8 @@ const Editor = () => {
                                 Отменить изменения
                             </Button> */}
                             <NavLink
-                            className={`${buttonStyles.button} ${buttonStyles['button--stroke']} ${buttonStyles['button--blue']}`}
-                                to='..'
+                                className={`${buttonStyles.button} ${buttonStyles['button--stroke']} ${buttonStyles['button--blue']}`}
+                                to='/private/profile'
                             >
                                 Отменить изменения
                             </NavLink>

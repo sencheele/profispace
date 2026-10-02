@@ -1,0 +1,86 @@
+@use '@/styles/core.scss' as *;
+
+.activity-entry {
+    display: flex;
+    align-items: start;
+    gap: 10px 20px;
+
+    @include vp-600 {
+        column-gap: 15px;
+    }
+
+    @include vp-450 {
+        flex-direction: column;
+    }
+
+    &__number {
+        @include typography(800, 1, 200px, var(--color-blue-500-20));
+
+        flex-shrink: 0;
+        width: 130px;
+        margin-top: -22px;
+        text-align: center;
+
+        @include vp-1600 {
+            width: 100px;
+            font-size: 160px;
+        }
+
+        @include vp-1440 {
+            width: 90px;
+            font-size: 140px;
+        }
+
+        @include vp-600 {
+            width: 70px;
+            margin-top: -10px;
+            font-size: 100px;
+        }
+
+        @include vp-450 {
+            width: 60px;
+            margin-top: -10px;
+            font-size: 80px;
+        }
+    }
+
+    &__fields {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: end;
+        gap: 15px;
+        width: 100%;
+    }
+
+    &__field-description {
+        grid-column: span 2;
+    }
+
+    &__delete {
+        @include reset-button;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        aspect-ratio: 1;
+        height: 45px;
+        border: 1px solid var(--color-gray-700);
+        border-radius: 4px;
+        transition: border-color $trans-default;
+
+        svg {
+            aspect-ratio: 1;
+            width: 24px;
+            fill: var(--color-gray-700);
+            transition: fill $trans-default;
+        }
+
+        @include hover {
+            border-color: var(--color-error);
+
+            svg {
+                fill: var(--color-error);
+            }
+        }
+    }
+}

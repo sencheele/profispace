@@ -1,20 +1,22 @@
 import styles from './Field.module.scss'
 
 interface Props {
+    className?: string
     label: string
-    type: 'text' | 'tel' | 'number' | 'email' | 'password' | 'url'
+    type?: 'text' | 'tel' | 'number' | 'email' | 'password' | 'url'
     placeholder: string
     required: boolean,
-    className?: string
+    textarea?: boolean
 }
 
 const Field = ( props: Props ) => {
     const {
+        className = '',
         label,
-        type,
+        type = 'text',
         placeholder,
         required,
-        className = '',
+        textarea = false,
     } = props
 
     return (
@@ -23,11 +25,20 @@ const Field = ( props: Props ) => {
                 {label}
             </span>
 
-            <input
-                type={type}
-                placeholder={placeholder}
-                required={required}
-            />
+            {
+                textarea ? (
+                    <textarea
+                        placeholder={placeholder}
+                        required={required}
+                    ></textarea>
+                ) : (
+                    <input
+                        type={type}
+                        placeholder={placeholder}
+                        required={required}
+                    />
+                )
+            }
         </label>
     )
 }

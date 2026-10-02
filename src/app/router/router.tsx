@@ -3,7 +3,9 @@ import Profile from '@/areas/private/pages/Profile'
 import ProfileEdit from '@/areas/private/pages/ProfileEdit'
 import PublicLayout from '@/areas/public/layouts/PublicLayout'
 import About from '@/areas/public/pages/About'
-import Home from '@/areas/public/pages/Home'
+import HomePublic from '@/areas/public/pages/Home'
+import HomePrivate from '@/areas/private/pages/Home'
+import HomeEdit from '@/areas/private/pages/HomeEdit'
 import ProjectPage from '@/areas/public/pages/ProjectPage'
 import Projects from '@/areas/public/pages/ProjectsPage'
 import { createBrowserRouter, Navigate } from 'react-router-dom'
@@ -19,7 +21,7 @@ const router = createBrowserRouter([
             },
             {
                 path: 'home',
-                element: <Home />
+                element: <HomePublic />
             },
             {
                 path: 'projects',
@@ -50,11 +52,15 @@ const router = createBrowserRouter([
             {
                 path: 'profile/edit',
                 element: <ProfileEdit />
-            }
-            // {
-            //     path: 'home',
-            //     element: <Home />
-            // },
+            },
+            {
+                path: 'home',
+                element: <HomePrivate />
+            },
+            {
+                path: 'home/edit',
+                element: <HomeEdit />
+            },
             // {
             //     path: 'projects',
             //     element: <Projects />,

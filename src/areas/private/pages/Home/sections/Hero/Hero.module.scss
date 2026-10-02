@@ -1,0 +1,66 @@
+@use '@/styles/core.scss' as * ;
+
+.hero {
+    &__title {
+        @include typography(700, 1, 62px, var(--color-accent));
+
+        margin-bottom: 20px;
+
+        @include vp-1600 {
+            margin-bottom: 15px;
+            font-size: 52px;
+        }
+
+        @include vp-1440 {
+            font-size: 48px;
+        }
+
+        @include vp-600 {
+            font-size: 42px;
+        }
+    }
+
+    &__position {
+        @include typography(600, 1, 32px);
+
+        margin-bottom: 30px;
+
+        @include vp-1600 {
+            font-size: 28px;
+        }
+
+        @include vp-1440 {
+            font-size: 24px;
+        }
+
+        @include vp-600 {
+            margin-bottom: 25px;
+            font-size: 22px;
+        }
+    }
+
+    &__description {
+        @include typography(400, 1.6, 18px);
+
+        max-width: 900px;
+        margin-bottom: 30px;
+
+        @include vp-1600 {
+            font-size: 16px;
+        }
+
+        @include vp-600 {
+            margin-bottom: 25px;
+        }
+
+        p:not(:last-child) {
+            margin-bottom: 0.6em;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px 20px;
+    }
+}

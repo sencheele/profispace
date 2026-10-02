@@ -1,0 +1,8 @@
+@use '@/styles/core.scss' as * ;
+
+.featured-projects {
+    &__button {
+        width: fit-content;
+        margin-top: 30px;
+    }
+}

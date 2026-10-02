@@ -18,11 +18,17 @@ $trans-long: 0.6s ease;
     --color-blue-500: #7C5CFC;
     --color-blue-500-20: #7C5CFC33;
 
+    --color-red-500: #F85149;
+
     // semantic
     --color-bg: var(--color-gray-900);
+
     --color-text-primary: var(--color-gray-100);
     --color-text-secondary: var(--color-gray-500);
+
     --color-accent: var(--color-blue-500);
     --color-accent-hover: var(--color-blue-400);
     --color-accent-opacity: var(--color-blue-500-20);
+
+    --color-error: var(--color-red-500);
 }
